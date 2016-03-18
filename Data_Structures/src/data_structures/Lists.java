@@ -138,4 +138,6 @@ public class Lists {
 		}
 		
 	}
+	//TODO da se napravqt oshte dva statichni spisyka :D
+	//Da imat funkcionalnostite na spisycite
 }
