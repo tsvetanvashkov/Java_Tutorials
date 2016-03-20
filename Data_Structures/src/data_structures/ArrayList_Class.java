@@ -10,6 +10,10 @@ public class ArrayList_Class {
 		
 		arr.add("String");
 		arr.add(151 + "asdfasdf");
+		arr.add(2, 123123);
+		arr.clear();
+		
+		
 		
 		for (int i = 0; i < arr.size(); i++) {
 			Object vauleOfarr = arr.get(i);

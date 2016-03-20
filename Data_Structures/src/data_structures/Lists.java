@@ -12,6 +12,8 @@ public class Lists {
 	 * 3. Check does list are empty or not
 	 * 4. Remove element from list
 	 * 5. Give some element position in lists
+	 * 6. Clear element
+	 * 7. Remove element from position
 	 */
 	
 	
@@ -30,6 +32,13 @@ public class Lists {
 		return list_counts;
 	}
 	
+	public void clear(){
+		list = new Object[0];
+		list_counts = 0;
+	}
+	
+	//this is because we want everytime to begin with new List
+	//when we create new Obeject from Lists classs
 	public Lists(){
 		 list = new Object[list_capacity];
 		 list_counts = 0;
@@ -132,6 +141,14 @@ public class Lists {
 		l.add("String");
 		l.add(1515);
 		l.removeObj(0);
+		
+		Lists second = new Lists();
+		
+		second.add("asd");
+		
+		for (int i = 0; i <second.getLength(); i++) {
+			System.out.println(second.indexContain(i));
+		}
 		
 		for (int i = 0; i <l.getLength(); i++) {
 			System.out.println(l.indexContain(i));

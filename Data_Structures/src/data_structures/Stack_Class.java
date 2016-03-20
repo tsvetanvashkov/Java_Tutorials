@@ -12,6 +12,8 @@ public class Stack_Class {
 		st.push(2);
 		
 		
+		
+		
 		while (st.size() > 0){
 			Object oneByOne = st.pop();
 			System.out.println(oneByOne);
