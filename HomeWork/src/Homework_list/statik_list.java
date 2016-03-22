@@ -66,9 +66,38 @@ public class statik_list {
 		}
 	}
 	///////////////////////////////////////////////////////////////////////////
+	public Object remuveObj(int index){
+		if (index >= list1_count || index < 0){
+			throw new IndexOutOfBoundsException("You have Entered invalid index :" + index);
+		}
+		Object removeFromArray = list1[index];
+		System.arraycopy(list1, index + 1, list1, index, list1_count - index +1);
+		list1[list1_count - 1] = null;
+		list1_count--;
+		return removeFromArray;
+	}
+	
+	public int removeObj(Object remove_object){
+		int index = indexOf(remove_object);
+		if (index == 0){
+			return index -1;
+		}
+		else{
+			System.arraycopy(list1, index + 1, list1, index, list1_count - index +1);
+			list1_count--;
+			return index;
+		}
+	}
+	
 	
 	public static void main(String[] args) {
+		statik_list l1 = new statik_list();
 		
+		l1.add(13427);
+		
+		for (int i = 0; i < l1.getLeght(); i++) {
+			System.out.println(l1.indexContain(i));
+		}
 
 	}
 

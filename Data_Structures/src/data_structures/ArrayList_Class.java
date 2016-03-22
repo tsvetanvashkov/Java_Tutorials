@@ -15,6 +15,7 @@ public class ArrayList_Class {
 		
 		
 		
+		
 		for (int i = 0; i < arr.size(); i++) {
 			Object vauleOfarr = arr.get(i);
 			System.out.println(vauleOfarr);
